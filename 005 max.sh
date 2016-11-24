@@ -6,8 +6,11 @@ echo "Enter 2nd number"
 read y
 
 if [ $x -gt $y ]
-then
+    then
     echo "Max = $x"
-else 
+elif [ $y -gt $x ]
+    then
     echo "Max = $y"
+else 
+    echo "Equal"
 fi
